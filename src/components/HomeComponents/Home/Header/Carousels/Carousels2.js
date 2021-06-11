@@ -10,8 +10,8 @@ const content = [
             "https://ld-prestashop.template-help.com/prestashop_eze_256/modules/jxmegalayout/extracontent/xhDJFGQ0922nesyK.jpg",
         title1: " All types of major and  ",
         title2: "small appliance repairs",
-        discription1:"Our repair services include riding lawn mowers, exercise equipment and more. We are the  .",
-        discription2:"  household appliance repair provider you can trust for any problem.",
+        discription1:"Our repair services include riding lawn mowers, exercise equipment and more. We are the",
+        discription2:"household appliance repair provider you can trust for any problem.",
         button: "Shope",
     },
     {
@@ -39,13 +39,14 @@ const Carousels2 = () => {
     return (
         <div>
             {/* <Sliderr classNames={horizontalCss} autoplay={1000}> */}
-            <Sliderr className="slider-wrapper" autoplay={1000} style={{height:'auto',width:'100%', }}>
+          <Sliderr className="slider-wrapper" autoplay={1000} style={{height:'auto',width:'100%', }}>
                 {content.map((item, index) => (
                     <div
                         class="slide-bg"
                         key={index}
                         style={{
-                            background: `url('${item.image}' ) no-repeat center center`, backgroundSize: "cover",
+                            // height:'500px',width:'500px',
+                            background: `url('${item.image}' ) no-repeat center center`,backgroundSize: "cover",
 
                         }}
 
@@ -64,7 +65,7 @@ const Carousels2 = () => {
                             >
                                 {item.title1}
                             </h3>
-                            <h3
+                      <h3
                                class="text-start"
                                 style={{
                                     fontSize: "50px",
@@ -74,7 +75,7 @@ const Carousels2 = () => {
                                 {item.title2}
                             </h3>
                         </div>
-                        <div class="paragraphs">
+                        <div class="discriptaions">
                             <p class="text-sm-start">
                             {item.discription1}
                             </p>
@@ -83,7 +84,7 @@ const Carousels2 = () => {
                             </p>
                         </div>
                             <div>
-                                <button className="btn-brand carousels-btn">
+                                <button className="btn-brand carousels-btn  rounded-pill" >
                                     {item.button}
                                 </button>
                             </div>

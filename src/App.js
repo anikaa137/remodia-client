@@ -8,6 +8,7 @@ import {
   Route,
 } from "react-router-dom";
 
+import ServiceCards from '../src/components/serviceCards/ServiceCards'
 
 function App() {
   return (
@@ -17,8 +18,8 @@ function App() {
           <Route exact path="/">
             <Home/>
           </Route>
-          <Route path="/users">
-
+          <Route path="/serviceCards">
+          <ServiceCards/>
           </Route>
           <Route path="/">
 

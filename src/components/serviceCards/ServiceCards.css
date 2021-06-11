@@ -1,0 +1,14 @@
+.sercviceCards{
+    background-color: #f1f8fa;
+}
+.card{
+    border: none;
+    margin-top: 30%;
+    background-color: #f1f8fa;
+}
+.card img{
+    border-radius: 5%;
+}
+.card:hover{
+    color:#34b9b9;
+}
