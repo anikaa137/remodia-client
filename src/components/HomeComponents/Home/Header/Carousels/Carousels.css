@@ -1,0 +1,47 @@
+
+html {
+    overflow: scroll;
+    overflow-x: hidden;
+}
+::-webkit-scrollbar {
+    width: 0;  /* Remove scrollbar space */
+    background: transparent;  /* Optional: just make scrollbar invisible */
+}
+/* Optional: show position indicator in red */
+::-webkit-scrollbar-thumb {
+    background: #FF0000;
+}
+polygon{
+    fill: #5616be;
+    display: none;
+}
+.titles{
+    position:absolute;
+    margin-top: 10%;
+}
+.paragraphs{
+    position:absolute;
+    margin-top: 22%;
+    display: block;
+}
+.btn-brand{
+
+}
+.carousels-btn{
+    position:absolute;
+    margin-top: 30%;
+    margin-left:-20;
+}
+@media only screen and (max-width: 768px) {
+    /* For mobile phones: */
+    .slide-bg{
+
+    }
+    .titles{
+        margin-top: 20%;
+        color:#34b9b9;
+    }
+    .paragraphs{
+       display: none;
+    }
+  }

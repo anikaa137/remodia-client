@@ -1,0 +1,38 @@
+
+/* ul.navbar-nav.menual-customize {
+    margin-left: auto;
+} */
+/* .manuColor li a{
+    color: rgb(10, 10, 10)!important;
+}
+.manuColor li a:hover{
+
+} */
+
+.menual-customize li a {
+    display: inline-block;
+    color: rgb(10, 10, 10)!important;
+    padding-left: 60px!important;
+    font-size: 14px;
+    /* transition: .3s; */
+    font-weight: 500;
+}
+.menual-customize li a:hover {
+    color: #34b9b9!important;
+
+}
+
+    /* button.carousel-control-prev {
+        opacity: 0;
+    }
+    button.carousel-control-next {
+        opacity: 0;
+    }
+    .navBg {
+        background:  #fafafa;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        display: block;
+    } */
