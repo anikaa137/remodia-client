@@ -6,7 +6,7 @@ const HomeRepair = () => {
         <div class="homerepair ">
             <div class="container">
                 <div class="row g-0">
-                    <div class=" col-sm-5 col-md-5 col-md-1">
+                    <div class="col-md-5 ">
                         <div class="homerepairCardtext">
                             <h3 class=" text-start ">The Trusted Name in Home <br /> Repair</h3>
                             <h5 class=" text-start pt-5">We provide quality repair services to help extend the life of your appliances. We offer a 90-day
@@ -17,7 +17,7 @@ const HomeRepair = () => {
 
                         </div>
                     </div>
-                    <div class="col-7 col-md-7 col-md-1">
+                    <div class="col-md-7">
                         <img src="https://ld-prestashop.template-help.com/prestashop_eze_256/modules/jxmegalayout/extracontent/YxiXDoQEAYsXZEsJ.png" class="img-fluid homerepairImg"airImg alt="homeRepair Img" />
                     </div>
                 </div>
