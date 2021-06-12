@@ -8,7 +8,7 @@ import {
   Route,
 } from "react-router-dom";
 
-import ServiceCards from '../src/components/serviceCards/ServiceCards'
+import ServiceCards from './components/HomeComponents/Home/serviceCards/ServiceCards'
 
 function App() {
   return (

@@ -1,9 +1,9 @@
 import React from 'react';
 import './Carousels.css'
 import Sliderr from "react-animated-slider";
-// import horizontalCss from "react-animated-slider/build/horizontal.css";
+import horizontalCss from "react-animated-slider/build/horizontal.css";
 
-import "react-animated-slider/build/horizontal.css";
+// import "react-animated-slider/build/horizontal.css";
 const content = [
     {
         image:
@@ -38,8 +38,8 @@ const content = [
 const Carousels2 = () => {
     return (
         <div>
-            {/* <Sliderr classNames={horizontalCss} autoplay={1000}> */}
-          <Sliderr className="slider-wrapper" autoplay={1000} style={{height:'auto',width:'100%', }}>
+            <Sliderr classNames={horizontalCss} autoplay={1000}>
+          {/* <Sliderr className="slider-wrapper" autoplay={1000} style={{height:'auto',width:'100%', }}> */}
                 {content.map((item, index) => (
                     <div
                         class="slide-bg"
