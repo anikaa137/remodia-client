@@ -3,7 +3,7 @@ footer {
 }
 .footer-bg{
     /* background:linear-gradient( rgba(17,17,17,0.80),  rgba(17,17,17,0.80) ); */
-    background: linear-gradient( rgba(17,17,17,0.80), rgba(17,17,17,0.80) ), url(https://ld-prestashop.template-help.com/prestashop_eze_256/img/p/4/9/49-home_default.jpg);
+    background: linear-gradient( rgba(17,17,17,0.80), rgba(17,17,17,0.80) ), url(https://ld-prestashop.template-help.com/prestashop_eze_256/modules/jxblog/img/pt/3.jpg);
    /* background-color: 0.21429rem 0.21429rem 0 #34b9b9; */
     background-position: center center;
     background-repeat: no-repeat;
@@ -11,10 +11,10 @@ footer {
     background-size: cover;
     overflow: hidden;
 }
-.footer-contents {
+/* .footer-contents {
     padding: 32px 0;
   background-color: #f1f8fa;
-}
+} */
 .opening-shedule li {
     border-bottom: 1px dotted #d9d9d9;
     padding: 12px 0px 12px;
@@ -32,7 +32,6 @@ footer {
         margin-right: 10px;
         position: relative;
         text-align: center;
-
         transition: all 0.3s ease-in-out;
         width: 35px;
         -webkit-border-radius: 0px;
@@ -54,7 +53,7 @@ footer {
     text-align: center;
     width: 20px;
     height: 17px;
-    color: #ad6844;
+    color: #34b9b9;
     margin-right: 0px;
  }
 

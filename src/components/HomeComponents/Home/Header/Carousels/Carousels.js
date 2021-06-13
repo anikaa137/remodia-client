@@ -1,4 +1,4 @@
-import { Button } from "react-bootstrap";
+// import { Button } from "react-bootstrap";
 import React from "react";
 import Slider from "react-animated-slider";
 import "react-animated-slider/build/horizontal.css";
@@ -9,33 +9,33 @@ const Carousels = () => {
     {
       image:
         "https://ld-prestashop.template-help.com/prestashop_eze_256/modules/jxmegalayout/extracontent/xhDJFGQ0922nesyK.jpg",
-      title: " All types of major and  ",
-      title: "small appliance repairs",
-      description:
+      title1: " All types of major and  ",
+      title2: "small appliance repairs",
+      description1:
         "Our repair services include riding lawn mowers, exercise equipment and more. We are the",
-      description:
+      description2:
         "household appliance repair provider you can trust for any problem.",
       button: "Shope",
     },
     {
       image:
         "https://ld-prestashop.template-help.com/prestashop_eze_256/modules/jxmegalayout/extracontent/YTZ5SImNTJEOSZxg.jpg",
-      title: "Trust the appliance"  ,
-      title: "repairexperts",
+      title1: "Trust the appliance"  ,
+      title2: "repairexperts",
 
-      description:
+      description1:
         "We stand behind our work and the parts we use. Count on us for fast, reliable",
-      description: "service and satisfaction guaranteed!",
+      description2: "service and satisfaction guaranteed!",
 
       button: "Shope",
     },
     {
       image:
         "https://ld-prestashop.template-help.com/prestashop_eze_256/modules/jxmegalayout/extracontent/3XDPXuAGIdE8Y2uH.jpg",
-      title: "Appliance service guarantee",
-      description:
+      title1: "Appliance service guarantee",
+      description1:
         "We stand behind our work and the parts we use. Count on us for fast, reliable",
-      description: "service and satisfaction guaranteed!",
+      description2: "service and satisfaction guaranteed!",
 
       button: "Shope",
     },
@@ -52,9 +52,13 @@ const Carousels = () => {
           >
             <div className="d-flex justify-content-start p-3">
               <div className="detailsSizing">
-                <h1>{item.title}</h1>
-                <p>{item.description}</p>
-                <Button>{item.button}</Button>
+                <h1 class="text-start">{item.title1}</h1>
+                <h1 class="text-start">{item.title2}</h1>
+                <p class="text-start mt-5"> {item.description1}</p>
+                <p class="text-start">{item.description2}</p>
+                <button className="btn-brand carousels-btn rounded-pill mt-5 " >
+                                    {item.button}
+                                </button>
               </div>
             </div>
           </div>

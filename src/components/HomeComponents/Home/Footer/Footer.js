@@ -9,7 +9,7 @@ import {
     faPinterest,
 } from "@fortawesome/free-brands-svg-icons";
 import { faCaretRight } from "@fortawesome/free-solid-svg-icons";
-import { Link } from "react-router-dom";
+
 
 function componentName() {
     return (
@@ -22,10 +22,10 @@ function componentName() {
                 >
                     <div class="container">
                         <div class="row">
-                            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                            <div class="col-md-12">
                                 <div class="about-footer">
                                     <div class="row">
-                                        <div class="col-lg-10 col-lg-offset-1 col-md-12 col-sm-12 col-xs-12">
+                                        <div class="col-md-12 mt-5">
                                             <figure>
                                                 <img
                                                     class="center mt-4"
@@ -34,18 +34,16 @@ function componentName() {
                                                 />
                                             </figure>
                                             <p class="margin-top-24">
-                                                Pakkapati is Jasonas premier and
-                                                most trusted flooring provider,
-                                                including carpet, vinyl,
-                                                hardwood, laminate, and tile for
-                                                both domestic and business
-                                                spaces in all price ranges. Our
-                                                warranties are superior than the
+                                                Remodia is Trust the appliance
+                                                repairexperts.We sell not only top quality
+                                                products, but give our customers a positive online shopping experience.
+                                                Our arranties are superior than the
                                                 manufacturers warranties, and
                                                 our pricing is the absolute
-                                                best.
+                                                best.Purchase the goods you need every day or just like in a few clicks or taps, depending on the device you use
+                                                to access the Internet. We work to make your life more enjoyable.
                                             </p>
-                                            <div class="footer-social-icons">
+                                            <div class="footer-social-icons mt-5">
                                                 <p>
                                                     <FontAwesomeIcon
                                                         icon={faFacebookF}
@@ -91,20 +89,20 @@ function componentName() {
                                         </div>
 
                                         <div class="textwidget">
-                                            <p>
-                                                <a href="f">
-                                                    support-us@pakkapati.com
+                                            <p >
+                                                <a href="f" class="text-reset">
+                                                    support-us@remodia.com
                                                 </a>
                                                 <br />
-                                                <a href="f">
-                                                    helpmenow@pakkapati.com
+                                                <a href="f" class="text-reset">
+                                                    helpmenow@remodia.com
                                                 </a>
                                             </p>
                                             <i class="fa fa-location-arrow fa-contact"></i>{" "}
                                             <p>
-                                                Road-2,3/A East Shibgonj
+                                                Road-2,3/A East Andaorkillha
                                                 <br />
-                                                Sylhet-3100, Bangladesh
+                                                 Chittagong-3100, Bangladesh
                                             </p>
                                             <i class="fa fa-phone fa-contact"></i>{" "}
                                             <p>
@@ -133,7 +131,7 @@ function componentName() {
                                                             class="service-icon"
                                                             icon={faCaretRight}
                                                         />
-                                                        Wooden Flooring
+                                                         Home Renovation
                                                     </p>
                                                 </li>
 
@@ -143,7 +141,7 @@ function componentName() {
                                                             class="service-icon"
                                                             icon={faCaretRight}
                                                         />
-                                                        Complete Paving
+                                                         Laying Linoleum
                                                     </p>
                                                 </li>
 
@@ -153,7 +151,7 @@ function componentName() {
                                                             class="service-icon"
                                                             icon={faCaretRight}
                                                         />
-                                                        Interior Flooring
+                                                         Door Installation
                                                     </p>
                                                 </li>
 
@@ -163,7 +161,7 @@ function componentName() {
                                                             class="service-icon"
                                                             icon={faCaretRight}
                                                         />
-                                                        Interior Flooring
+                                                        Floor Carpeting
                                                     </p>
                                                 </li>
 
@@ -173,7 +171,7 @@ function componentName() {
                                                             class="service-icon"
                                                             icon={faCaretRight}
                                                         />
-                                                        Complete Paving
+                                                         House Cleaning
                                                     </p>
                                                 </li>
 
@@ -183,7 +181,7 @@ function componentName() {
                                                             class="service-icon"
                                                             icon={faCaretRight}
                                                         />
-                                                        Complete Paving
+                                                        Plumbing fixing
                                                     </p>
                                                 </li>
 
@@ -193,7 +191,7 @@ function componentName() {
                                                             class="service-icon"
                                                             icon={faCaretRight}
                                                         />
-                                                        Carpet Installation
+                                                         Tap replacement
                                                     </p>
                                                 </li>
                                                 <li>
@@ -202,26 +200,7 @@ function componentName() {
                                                             class="service-icon"
                                                             icon={faCaretRight}
                                                         />
-                                                        Carpet Installation
-                                                    </p>
-                                                </li>
-
-                                                <li>
-                                                    <p>
-                                                        <FontAwesomeIcon
-                                                            class="service-icon"
-                                                            icon={faCaretRight}
-                                                        />
-                                                        Interior Flooring
-                                                    </p>
-                                                </li>
-                                                <li>
-                                                    <p>
-                                                        <FontAwesomeIcon
-                                                            class="service-icon"
-                                                            icon={faCaretRight}
-                                                        />
-                                                        Carpet Installation
+                                                         Filter Replacement
                                                     </p>
                                                 </li>
 
@@ -231,7 +210,26 @@ function componentName() {
                                                             class="service-icon"
                                                             icon={faCaretRight}
                                                         />
-                                                        Wooden Flooring
+                                                         Sewer Cleaning
+                                                    </p>
+                                                </li>
+                                                <li>
+                                                    <p>
+                                                        <FontAwesomeIcon
+                                                            class="service-icon"
+                                                            icon={faCaretRight}
+                                                        />
+                                                         Electrical Services
+                                                    </p>
+                                                </li>
+
+                                                <li>
+                                                    <p>
+                                                        <FontAwesomeIcon
+                                                            class="service-icon"
+                                                            icon={faCaretRight}
+                                                        />
+                                                        AC Serviceing
                                                     </p>
                                                 </li>
 
@@ -242,7 +240,7 @@ function componentName() {
                                                             class="service-icon"
                                                             icon={faCaretRight}
                                                         />
-                                                        Wooden Flooring
+                                                         Oven Connection
                                                     </p>
                                                 </li>
                                             </ul>
@@ -295,21 +293,15 @@ function componentName() {
                             </div>
                         </div>
                     </div>
-                </section>
-
-                <section class="footer-contents">
-                    <div class="container">
-                        <div class="row clearfix">
-                            <div class="col-md-12 col-sm-12 text-center clearfix">
-                                <p class="copyright-text text-dark">
+                    <div class="col-md-12 col-sm-12 text-center clearfix">
+                                <p class="copyright-text">
                                     Copyright {new Date().getFullYear()} -
-                                    Pakkapati by BlueWindLab. All Rights
+                                     Remodia by Amina Anika.All Rights
                                     Reserved.{" "}
                                 </p>
                             </div>
-                        </div>
-                    </div>
                 </section>
+
             </footer>
         </div>
     )
