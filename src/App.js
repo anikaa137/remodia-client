@@ -8,7 +8,7 @@ import {
   Route,
 } from "react-router-dom";
 
-import ServiceCards from './components/HomeComponents/Home/serviceCards/ServiceCards'
+import Sidebar from "./components/ShareComponents/Sidebar/Sidebar";
 
 function App() {
   return (
@@ -18,8 +18,8 @@ function App() {
           <Route exact path="/">
             <Home/>
           </Route>
-          <Route path="/serviceCards">
-          <ServiceCards/>
+          <Route path="/sidebar">
+          <Sidebar/>
           </Route>
           <Route path="/">
 
