@@ -1,7 +1,8 @@
 import React from "react";
 import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import Home from '../src/components/HomeComponents/Home/Home'
+import Home from './components/HomeComponents/Home/Home'
+import AddService from './components/AdminComponents/AddService/AddService'
 import {
   BrowserRouter as Router,
   Switch,
@@ -18,11 +19,11 @@ function App() {
           <Route exact path="/">
             <Home/>
           </Route>
-          <Route path="/sidebar">
+          <Route path="/dashbord">
           <Sidebar/>
           </Route>
-          <Route path="/">
-
+          <Route path="/addService">
+            <AddService/>
           </Route>
         </Switch>
     </Router>

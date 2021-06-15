@@ -1,5 +1,6 @@
 import React from 'react';
 import "./NavBar.css"
+import { Link } from "react-router-dom";
 const NavBar = () => {
   return (
     <div class="mt-5 " >
@@ -10,15 +11,16 @@ const NavBar = () => {
     </button>
     <div class="collapse navbar-collapse" id="navbarNav">
       <ul class="navbar-nav ms-auto menual-customize manuColor">
-        <li class="nav-item me-5">
-          <a class="nav-link" aria-current="page" href="#">Home</a>
+      <Link to="/">   <li class="nav-item me-5">
+         <a class="nav-link" href="#">Home</a>
         </li>
+      </Link>
         <li class="nav-item me-5">
           <a class="nav-link" href="#">Features</a>
         </li>
-        <li class="nav-item me-5">
-          <a class="nav-link" href="#">Pricing</a>
-        </li>
+        <Link to="/dashbord">  <li class="nav-item me-5">
+          <a class="nav-link" href="#">Dashbord</a>
+        </li></Link>
         <li class="nav-item me-5">
           <a class="nav-link  " href="#">Disabled</a>
         </li>
