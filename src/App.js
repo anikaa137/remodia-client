@@ -1,4 +1,4 @@
-import React from "react";
+import React, { createContext, useState } from "react";
 import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Home from './components/HomeComponents/Home/Home'
@@ -13,10 +13,14 @@ import Sidebar from "./components/ShareComponents/Sidebar/Sidebar";
 import ViewService from "./components/ServiceComponents/ViewService/ViewService";
 import CheckOut from './components/ServiceComponents/CheckOut/CheckOut'
 
+export const ProductContext = createContext()
 function App() {
+  const [viewdata, setViewdata] = useState({})
   return (
-    <div className="App">
-        <Router>
+
+
+      <ProductContext.Provider value={[viewdata, setViewdata]}>
+      <Router>
          <Switch>
           <Route exact path="/">
             <Home/>
@@ -34,8 +38,9 @@ function App() {
               <CheckOut/>
           </Route>
         </Switch>
-    </Router>
-    </div>
+        </Router>
+        </ProductContext.Provider>
+
   );
 }
 

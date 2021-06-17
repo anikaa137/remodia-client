@@ -1,16 +1,17 @@
-import React, { useEffect, useState } from 'react'
+import React, { useEffect, useState,  } from 'react'
 import { useParams } from 'react-router';
 import "./ViewSErvice.css"
 import { useForm } from "react-hook-form";
 import { Link } from "react-router-dom";
-import CheckOut from '../CheckOut/CheckOut';
+// import { useContext } from 'react';
+// import { ProductContext } from '../../../App';
 
 
 function ViewService() {
     const { id } = useParams()
     // console.log(id)
-    const [viewdata, setViewdata] = useState({})
-    console.log("viewdataaaaaaaa", viewdata);
+    // const [viewdata, setViewdata] = useContext( ProductContext)
+    // console.log(viewdata);
     const { register, handleSubmit } = useForm();
 
     const onSubmit = data => {
@@ -24,8 +25,18 @@ function ViewService() {
             imageURL: imageURL
         };
         console.log("eventdata", eventData)
-        setViewdata(eventData)
-    }
+        // setViewdata(eventData)
+        fetch("http://localhost:5000/addConfirmOrder", {
+            method: "POST",
+            headers: { "Content-Type": "application/json" },
+            body: JSON.stringify(eventData),
+        })
+            .then((res) => res.json())
+            .then((data) => {
+                console.log(data);
+            });
+    };
+
 
 
     const [viewService, setViewService] = useState([]);
@@ -82,8 +93,11 @@ function ViewService() {
                             </select>
                             <br /><br />
                             <div class="pt-5">
+                                {/* <CheckOut ></CheckOut> */}
                                 <Link to="/"><button type="button" class="btn-brand rounded-pill checkOut-btn ">Go To Home</button></Link>
-                                <Link to="/checkout"> <button type="submit" class="btn-brand rounded-pill checkOut-btn ">Proceed To checkout</button></Link>
+
+                                <Link to="/checkout"><button type="submit" class="btn-brand rounded-pill checkOut-btn ">Proceed To checkout </button></Link>
+
                             </div>
 
                         </form>

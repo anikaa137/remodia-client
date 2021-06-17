@@ -1,7 +1,12 @@
-import React from 'react';
+import React, { useContext } from 'react';
+import { ProductContext } from '../../../App';
 
-const CheckOut = ({viewdata}) => {
-    return (
+const CheckOut = () => {
+
+  const [viewdata, setViewdata] = useContext(ProductContext)
+  console.log(viewdata)
+  return (
+
         <div>
 <div class="card">
   <img src="..." class="card-img-top" alt="..."/>
