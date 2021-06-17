@@ -1,11 +1,54 @@
-import React from 'react'
+import React, { useState } from 'react'
 import "./AddService.css"
 import { useForm } from "react-hook-form";
 import Sidebar from "../../ShareComponents/Sidebar/Sidebar"
+import axios from 'axios';
 
 function AddService() {
     const { register, handleSubmit } = useForm();
-    const onSubmit = data => console.log(data);
+    const [imageURL, setImageURL] = useState(null);
+
+    const onSubmit = (data, e) => {
+        console.log(data);
+        const eventDta = {
+            name: data.name,
+            price: data.price,
+            detailes: data.detailes,
+            imageURL: imageURL,
+        };
+        // console.log(eventDta)
+        const url = `http://localhost:5000/addService`;
+        fetch(url, {
+            method: "POST",
+            headers: {
+                "content-type": "application/json",
+            },
+            body: JSON.stringify(eventDta),
+        }).then((res) => res.json())
+            .then((res) => {
+                if (res) {
+                    alert('Service added succefully')
+                    e.target.reset()
+            }
+        })
+    };
+
+    const handleImageUpload = (event) => {
+        console.log(event.target.files[0]);
+        const imageData = new FormData();
+        imageData.set("key", "d371491237d968517d992b8f6982be6a");
+        imageData.append("image", event.target.files[0]);
+
+        axios
+            .post("https://api.imgbb.com/1/upload", imageData)
+            .then(function (response) {
+                console.log(response);
+                setImageURL(response.data.data.display_url);
+            })
+            .catch(function (error) {
+                console.log(error);
+            });
+    };
     return (
         <div className="add-service-area">
             <div className="row m-0">
@@ -44,7 +87,7 @@ function AddService() {
                             <input
                                 type="file"
                                 class="form-control"
-                                // onChange={handleImageUpload}
+                                onChange={handleImageUpload}
                                 id="Photo"
                             />
                         </div>

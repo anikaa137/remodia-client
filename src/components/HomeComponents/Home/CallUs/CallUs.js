@@ -3,7 +3,7 @@ import './CallUs.css'
 
 function componentName() {
     return (
-      <div class="homerepair ">
+      <div class="homerepair">
       <div class="container">
           <div class="row g-0">
           <div class="col-md-7">

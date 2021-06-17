@@ -1,0 +1,14 @@
+.serviceDetailesCard{
+    border: none;
+   cursor: pointer;
+}
+.serviceDetailesImg{
+    border-radius: 5%;
+}
+.serviceDetailes-btn{
+    width: 140px;
+     font-size: 18px;
+}
+.serviceDetailesCard:hover{
+    color:#34b9b9
+}

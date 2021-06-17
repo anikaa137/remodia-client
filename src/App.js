@@ -10,6 +10,8 @@ import {
 } from "react-router-dom";
 
 import Sidebar from "./components/ShareComponents/Sidebar/Sidebar";
+import ViewService from "./components/ServiceComponents/ViewService/ViewService";
+import CheckOut from './components/ServiceComponents/CheckOut/CheckOut'
 
 function App() {
   return (
@@ -24,6 +26,12 @@ function App() {
           </Route>
           <Route path="/addService">
             <AddService/>
+          </Route>
+          <Route path="/view_service/:id">
+             <ViewService/>
+          </Route>
+          <Route path="/checkout">
+              <CheckOut/>
           </Route>
         </Switch>
     </Router>

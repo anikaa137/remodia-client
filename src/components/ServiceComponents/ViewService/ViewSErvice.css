@@ -1,0 +1,15 @@
+.viewService{
+    background-color: #f1f8fa;
+}
+.price{
+    color:#34b9b9
+}
+.tax{
+    font-size: 20px;
+    font-weight:400;
+}
+.checkOut-btn{
+    font-size: 20px;
+    width: 35%;
+
+}

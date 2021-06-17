@@ -7,6 +7,7 @@ import HomeRepair from './HomeRepair/HomeRepair'
 import CallUs from './CallUs/CallUs'
 import Tastimonals from './Tstimonials/Tastimonals'
 import Footer from './Footer/Footer'
+import Service from './Service/Service'
 function Home() {
     return (
         <div>
@@ -15,7 +16,7 @@ function Home() {
             <Carousels/>
             <ServiceCards />
             <HomeRepair />
-            <ServiceCards />
+            <Service/>
             <CallUs />
             <Tastimonals />
             <Footer/>
