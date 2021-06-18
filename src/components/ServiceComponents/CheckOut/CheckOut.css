@@ -1,4 +1,15 @@
 .quantity{
     color:#34b9b9;
-    font-size: 35px;
+    font-size: 45px;
+}
+.font-color{
+    color:#34b9b9;
+}
+.checkOut-btn{
+    font-size: 20px;
+    /* width: 50%; */
+    height: auto;
+}
+.checkOut-btn:hover{
+   background-color: #258080;
 }

@@ -23,7 +23,10 @@ function ViewService() {
             Area: data.Area,
             name: name,
             price: price,
-            imageURL: imageURL
+            imageURL: imageURL,
+            detailes: detailes,
+            id:_id
+
         };
         // console.log("eventdata", eventData)
         setViewdata(eventData)
@@ -32,13 +35,14 @@ function ViewService() {
 
 
     const [viewService, setViewService] = useState([]);
+    // console.log(viewService)
     useEffect(() => {
         fetch(`http://localhost:5000/ViewService/${id}`)
             .then(res => res.json())
             .then(data => setViewService(data))
     }, [id])
 
-    const { name, price, imageURL, detailes } = viewService;
+    const { name, price, imageURL, detailes,_id } = viewService;
     return (
         <div class="viewService p-5">
             <div class="container">
@@ -53,7 +57,7 @@ function ViewService() {
 
 
                         <form onSubmit={handleSubmit(onSubmit)} class="mt-5 text-start row g-2 ">
-                            <label for="inputname" class="form-label">
+                            <label for="inputname" class="form-label text-start">
                                 Duration
                             </label>
                             <br />
@@ -63,7 +67,7 @@ function ViewService() {
 
                             </select>
                             <br /><br />
-                            <label for="inputname" class="form-label">
+                            <label for="inputname" class="form-label text-start">
                                 Amount of Woekers
                             </label>
                             <br />
@@ -74,7 +78,7 @@ function ViewService() {
 
                             </select>
                             <br /><br />
-                            <label for="inputname" class="form-label">
+                            <label for="inputname" class="form-label text-start">
                                 Area
                             </label>
                             <br />
@@ -85,10 +89,10 @@ function ViewService() {
                             </select>
                             <br /><br />
                             <div class="pt-5">
-                                {/* <CheckOut ></CheckOut> */}
-                                <Link to="/"><button type="button" class="btn-brand rounded-pill checkOut-btn ">Go To Home</button></Link>
 
-                                 <button type="submit" class="btn-brand rounded-pill checkOut-btn "> Proceed To checkout </button>
+                            <Link to="/"><button type="button" class="btn-brand rounded-pill  viewService-btn">Go To Home</button></Link>
+
+                                 <button type="submit" class="btn-brand rounded-pill viewService-btn "> Proceed To checkout </button>
 
                             </div>
 

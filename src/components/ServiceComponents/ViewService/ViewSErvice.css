@@ -8,8 +8,18 @@
     font-size: 20px;
     font-weight:400;
 }
-.checkOut-btn{
-    font-size: 20px;
-    width: 35%;
-
+.viewService-btn{
+    /* font-size: 20px; */
+    width: 50%;
+    height: auto;
+}
+.viewService-btn:hover{
+    background-color: #258080;
+}
+.go-to-home-btn{
+    text-decoration:none;
+    color:white
+}
+.go-to-home-btn:hover{
+    color:white
 }

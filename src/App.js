@@ -1,5 +1,4 @@
 import React, { createContext, useState } from "react";
-import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Home from './components/HomeComponents/Home/Home'
 import AddService from './components/AdminComponents/AddService/AddService'
@@ -12,6 +11,7 @@ import {
 import Sidebar from "./components/ShareComponents/Sidebar/Sidebar";
 import ViewService from "./components/ServiceComponents/ViewService/ViewService";
 import CheckOut from './components/ServiceComponents/CheckOut/CheckOut'
+import Shipment from "./components/ServiceComponents/Shipment/Shipment";
 
 export const ProductContext = createContext()
 function App() {
@@ -36,6 +36,9 @@ function App() {
           </Route>
           <Route path="/checkout">
               <CheckOut/>
+          </Route>
+          <Route path="/shipment">
+              <Shipment/>
           </Route>
         </Switch>
         </Router>
