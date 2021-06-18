@@ -3,19 +3,20 @@ import { useParams } from 'react-router';
 import "./ViewSErvice.css"
 import { useForm } from "react-hook-form";
 import { Link } from "react-router-dom";
-// import { useContext } from 'react';
-// import { ProductContext } from '../../../App';
-
+import { useContext } from 'react';
+import { ProductContext } from '../../../App';
+import { useHistory } from "react-router";
 
 function ViewService() {
+    let history = useHistory();
     const { id } = useParams()
     // console.log(id)
-    // const [viewdata, setViewdata] = useContext( ProductContext)
-    // console.log(viewdata);
+    const [viewdata, setViewdata] = useContext( ProductContext)
+    console.log(viewdata);
     const { register, handleSubmit } = useForm();
 
     const onSubmit = data => {
-        console.log(data);
+        console.log("hello");
         const eventData = {
             Duration: data.Duration,
             Woekers: data.Woekers,
@@ -24,19 +25,10 @@ function ViewService() {
             price: price,
             imageURL: imageURL
         };
-        console.log("eventdata", eventData)
-        // setViewdata(eventData)
-        fetch("http://localhost:5000/addConfirmOrder", {
-            method: "POST",
-            headers: { "Content-Type": "application/json" },
-            body: JSON.stringify(eventData),
-        })
-            .then((res) => res.json())
-            .then((data) => {
-                console.log(data);
-            });
-    };
-
+        // console.log("eventdata", eventData)
+        setViewdata(eventData)
+        history.push("/checkout" );
+    }
 
 
     const [viewService, setViewService] = useState([]);
@@ -96,7 +88,7 @@ function ViewService() {
                                 {/* <CheckOut ></CheckOut> */}
                                 <Link to="/"><button type="button" class="btn-brand rounded-pill checkOut-btn ">Go To Home</button></Link>
 
-                                <Link to="/checkout"><button type="submit" class="btn-brand rounded-pill checkOut-btn ">Proceed To checkout </button></Link>
+                                 <button type="submit" class="btn-brand rounded-pill checkOut-btn "> Proceed To checkout </button>
 
                             </div>
 
